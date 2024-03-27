@@ -1,0 +1,4 @@
+[ec2group]
+{% for key, value in instances %}
+{{ value.public_ip }} block_devices={% for k, v in value.ebs_block_device %}{{ k.device_name[-1] }}{% if not loop.last %},{% endif %}{% endfor %}
+{% endfor %}

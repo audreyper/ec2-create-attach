@@ -1,0 +1,26 @@
+instances:
+  - name: instance1
+    availability_zone: some_availability_zone
+    disks:
+      - name: disk-1  
+        size: 10
+      - name: disk-2  
+        size: 5
+      - name: disk-3  
+        size: 8
+  - name: instance2   
+    availability_zone: some_availability_zone
+    disks:
+      - name: disk-4
+        size: 15
+ - name: instance3
+   availability_zone: some_availability_zone
+
+settings:
+  ami: some_ami
+  instance_type: some_instance_type
+  key_name: your_ssh-key
+  aws_region: some_region
+
+letters: ['f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p']
+ 
